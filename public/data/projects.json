@@ -8,39 +8,39 @@
       "topics": ["aspnetcore", "certificates", "security", "letsencrypt", "x509"]
     },
     {
-      "name": "AngularWebpackVisualStudio",
-      "description": "Complete template for building Angular applications with Webpack in Visual Studio. Includes TypeScript, hot module replacement, and production optimization.",
-      "url": "https://github.com/damienbod/AngularWebpackVisualStudio",
-      "stars": "300+",
-      "topics": ["angular", "webpack", "typescript", "visual-studio"]
+      "name": "angular-auth-oidc-client",
+      "description": "Angular library for OpenID Connect & OAuth2. Certified by OpenID Foundation, supports PKCE, token refresh, all modern OIDC providers, and follows latest security standards.",
+      "url": "https://github.com/damienbod/angular-auth-oidc-client",
+      "stars": "1100+",
+      "topics": ["angular", "oidc", "oauth2", "authentication", "pkce"]
     },
     {
-      "name": "AspNetCoreLocalization",
-      "description": "Comprehensive examples and best practices for implementing localization and globalization in ASP.NET Core applications. Supports multiple languages and cultures.",
-      "url": "https://github.com/damienbod/AspNetCoreLocalization",
-      "stars": "250+",
-      "topics": ["aspnetcore", "localization", "globalization", "i18n"]
+      "name": "bff-aspnetcore-angular",
+      "description": "Backend-For-Frontend (BFF) security architecture using ASP.NET Core and Angular. Implements secure authentication patterns with YARP reverse proxy and production-ready deployment.",
+      "url": "https://github.com/damienbod/bff-aspnetcore-angular",
+      "stars": "200+",
+      "topics": ["bff", "aspnetcore", "angular", "security", "yarp"]
     },
     {
-      "name": "SSI Credential Issuer",
-      "description": "Self-Sovereign Identity (SSI) credential issuer implementation. Issue and manage verifiable credentials using W3C standards and decentralized identifiers (DIDs).",
-      "url": "https://github.com/swiss-ssi-group/CredentialIssuer",
-      "stars": "100+",
-      "topics": ["ssi", "verifiable-credentials", "did", "identity", "blockchain"]
+      "name": "swiyu-aspire-aspnetcore",
+      "description": "Issue and verify swiyu credentials using the Swiss Digital Identity public beta, ASP.NET Core and Microsoft Aspire. Implements OID4VC and OID4VP standards with production-ready containers.",
+      "url": "https://github.com/swiss-ssi-group/swiyu-aspire-aspnetcore",
+      "stars": "20+",
+      "topics": ["swiyu", "aspire", "aspnetcore", "verifiable-credentials", "swiss-eid"]
     },
     {
-      "name": "SSI DID Resolver",
-      "description": "Decentralized Identifier (DID) resolver for Self-Sovereign Identity systems. Resolve DIDs to DID documents across multiple methods and networks.",
-      "url": "https://github.com/swiss-ssi-group/DIDResolver",
-      "stars": "80+",
-      "topics": ["did", "ssi", "resolver", "identity", "decentralized"]
+      "name": "swiyu-idp-aspire-aspnetcore",
+      "description": "Use swiyu (Swiss E-ID) with Duende IdentityServer using Aspire and ASP.NET Core. Implements authentication, MFA, and password recovery flows with verifiable credentials.",
+      "url": "https://github.com/swiss-ssi-group/swiyu-idp-aspire-aspnetcore",
+      "stars": "15+",
+      "topics": ["swiyu", "duende", "aspire", "swiss-eid", "identity-provider"]
     },
     {
-      "name": "AzureAD-OIDC-ASP.NET",
-      "description": "Production-ready examples of Azure Active Directory integration with ASP.NET Core using OpenID Connect. Includes authentication, authorization, and API protection.",
-      "url": "https://github.com/damienbod/AzureAD-OIDC-ASP.NET",
-      "stars": "150+",
-      "topics": ["azure-ad", "oidc", "aspnetcore", "authentication", "oauth2"]
+      "name": "EntraVerifiedEmployee",
+      "description": "Issue Microsoft Entra Verified Employee credentials using ASP.NET Core. Integrates with Microsoft Graph API to create verifiable credentials with employee information and photos.",
+      "url": "https://github.com/swiss-ssi-group/EntraVerifiedEmployee",
+      "stars": "10+",
+      "topics": ["entra-id", "verifiable-credentials", "aspnetcore", "microsoft-graph"]
     }
   ]
 }
