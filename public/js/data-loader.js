@@ -12,6 +12,29 @@ export function escapeHtml(text) {
 }
 
 /**
+ * Validate URL to ensure it uses safe protocols
+ * @param {string} url - URL to validate
+ * @returns {string} - Safe URL or '#' if invalid
+ */
+function validateUrl(url) {
+  if (!url) return '#';
+  try {
+    const parsed = new URL(url, window.location.origin);
+    // Only allow http, https, and relative URLs
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url;
+    }
+  } catch (e) {
+    // If URL parsing fails, it might be a relative URL
+    // Check if it doesn't start with javascript:, data:, or other dangerous protocols
+    if (!url.match(/^(javascript|data|vbscript|file):/i)) {
+      return url;
+    }
+  }
+  return '#';
+}
+
+/**
  * Safely parse JSON with error handling
  * @param {string} jsonString - JSON string to parse
  * @returns {Object|null} - Parsed object or null on error
@@ -74,7 +97,7 @@ export async function loadProjects(containerId) {
         </div>` : ''}
       </div>
       <div class="card-footer">
-        <a href="${escapeHtml(project.url)}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+        <a href="${validateUrl(project.url)}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
       </div>
     </div>
   `).join('');
@@ -107,7 +130,7 @@ export async function loadNews(containerId) {
         <p>${escapeHtml(article.summary)}</p>
       </div>
       <div class="card-footer">
-        ${article.link ? `<a href="${escapeHtml(article.link)}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Read More</a>` : ''}
+        ${article.link ? `<a href="${validateUrl(article.link)}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Read More</a>` : ''}
       </div>
     </div>
   `).join('');

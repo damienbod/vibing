@@ -114,14 +114,6 @@
   outline-offset: 2px;
 }
 
-.carousel-control-prev {
-  /* Left control */
-}
-
-.carousel-control-next {
-  /* Right control */
-}
-
 /* Carousel Indicators */
 .carousel-indicators {
   position: absolute;
