@@ -1,18 +1,30 @@
 /* Base Styles - Variables, Typography, and Core Styles */
 
 :root {
-  /* Color Palette */
-  --accent-color: #45e783;
-  --accent-dark: #35c46d;
-  --accent-light: #6aef9f;
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --text-muted: #6a6a6a;
+  /* Color Palette - Modern and Vibrant */
+  --accent-color: #6366f1;
+  --accent-dark: #4f46e5;
+  --accent-light: #818cf8;
+  --secondary-color: #ec4899;
+  --secondary-dark: #db2777;
+  --secondary-light: #f472b6;
+  --tertiary-color: #14b8a6;
+  --tertiary-dark: #0d9488;
+  --tertiary-light: #2dd4bf;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
   --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --bg-tertiary: #e9ecef;
-  --border-color: #dee2e6;
-  --focus-ring: rgba(69, 231, 131, 0.5);
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-gradient-start: #f8fafc;
+  --bg-gradient-end: #e0e7ff;
+  --border-color: #e2e8f0;
+  --focus-ring: rgba(99, 102, 241, 0.5);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   
   /* Typography */
   --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -69,7 +81,8 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background: linear-gradient(to bottom, #ffffff 0%, var(--bg-secondary) 100%);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -117,11 +130,12 @@ a {
   color: var(--accent-color);
   text-decoration: none;
   transition: var(--transition-base);
+  position: relative;
 }
 
 a:hover {
   color: var(--accent-dark);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus {
@@ -211,11 +225,13 @@ img {
   position: absolute;
   top: -40px;
   left: 0;
-  background: var(--accent-color);
-  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+  color: white;
   padding: var(--spacing-sm) var(--spacing-md);
   text-decoration: none;
   z-index: 100;
+  border-radius: 0 0 var(--border-radius) 0;
+  font-weight: 600;
 }
 
 .skip-link:focus {
