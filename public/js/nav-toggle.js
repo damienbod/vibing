@@ -1,5 +1,5 @@
 // Mobile navigation toggle
-export function initNavToggle() {
+function initNavToggle() {
   const navToggle = document.getElementById('nav-toggle');
   const navbarNav = document.getElementById('navbar-nav');
   
