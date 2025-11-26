@@ -1,6 +1,6 @@
 # vibing
 
-[![Deploy to GitHub Pages](https://github.com/damienbod/vibing/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/damienbod/vibing/actions/workflows/deploy-pages.yml)
+[![Deploy static content to Pages](https://github.com/damienbod/vibing/actions/workflows/static.yml/badge.svg)](https://github.com/damienbod/vibing/actions/workflows/static.yml)
 
 ## Live Preview
 
