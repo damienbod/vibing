@@ -41,6 +41,13 @@
       "url": "https://github.com/swiss-ssi-group/EntraVerifiedEmployee",
       "stars": "10+",
       "topics": ["entra-id", "verifiable-credentials", "aspnetcore", "microsoft-graph"]
+    },
+    {
+      "name": "EndToEndSecurityWeb",
+      "description": "End-to-end security implementation for web applications using ASP.NET Core. Demonstrates security best practices, secure coding patterns, and production-ready security configurations.",
+      "url": "https://github.com/secure-web-apps/EndToEndSecurityWeb",
+      "stars": "5+",
+      "topics": ["aspnetcore", "security", "web-security", "best-practices", "secure-coding"]
     }
   ]
 }
