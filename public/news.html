@@ -86,22 +86,7 @@
     </footer>
 
     <script type="module" src="/vibing/js/year.js"></script>
-    <script type="module" src="/vibing/js/data-loader.js"></script>
-    <script type="module">
-        import { loadNews } from '/vibing/js/data-loader.js';
-        
-        // Mobile navigation toggle
-        const navToggle = document.getElementById('nav-toggle');
-        const navbarNav = document.getElementById('navbar-nav');
-        
-        if (navToggle && navbarNav) {
-            navToggle.addEventListener('click', () => {
-                navbarNav.classList.toggle('active');
-            });
-        }
-        
-        // Load news
-        loadNews('news-container');
-    </script>
+    <script type="module" src="/vibing/js/nav-toggle.js"></script>
+    <script type="module" src="/vibing/js/news-init.js"></script>
 </body>
 </html>
