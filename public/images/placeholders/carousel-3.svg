@@ -1,0 +1,7 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="400" fill="#dee2e6"/>
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" fill="#1a1a1a" font-weight="bold">Open Source Contributor</text>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#4a4a4a">Leading SSI and certificate management projects</text>
+  <polygon points="600,170 650,230 550,230" fill="#45e783" opacity="0.3"/>
+  <polygon points="600,270 550,210 650,210" fill="#45e783" opacity="0.3"/>
+</svg>

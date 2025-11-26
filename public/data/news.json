@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "title": "New Certificate Manager Release",
+      "date": "2024-11-15",
+      "summary": "AspNetCoreCertificates 6.0 released with improved Let's Encrypt integration and support for .NET 8. Enhanced certificate validation and renewal features.",
+      "link": "https://github.com/damienbod/AspNetCoreCertificates/releases"
+    },
+    {
+      "title": "Self-Sovereign Identity Updates",
+      "date": "2024-10-28",
+      "summary": "Swiss SSI Group announces major updates to credential issuer and DID resolver components. New support for did:web and did:jwk methods.",
+      "link": "https://github.com/swiss-ssi-group"
+    },
+    {
+      "title": "ASP.NET Core Security Best Practices",
+      "date": "2024-09-12",
+      "summary": "Updated comprehensive guide on implementing security features in ASP.NET Core applications, including authentication, authorization, and certificate management.",
+      "link": "https://damienbod.com"
+    },
+    {
+      "title": "Microsoft MVP Award",
+      "date": "2024-07-01",
+      "summary": "Recognized as Microsoft MVP for contributions to ASP.NET Core development and community engagement. Focus on security and identity solutions.",
+      "link": "https://mvp.microsoft.com/en-us/PublicProfile/5002218"
+    }
+  ]
+}
