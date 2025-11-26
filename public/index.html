@@ -3,61 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibing - A Simple Bootstrap App</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self';">
+    <title>Damien Bowden - Software Development & Security</title>
+    <meta name="description" content="Damien Bowden - Microsoft MVP specializing in ASP.NET Core, security, and identity management. Open source contributor and technical blogger.">
+    <link rel="stylesheet" href="/vibing/css/base.css">
+    <link rel="stylesheet" href="/vibing/css/theme.css">
+    <link rel="stylesheet" href="/vibing/css/components/carousel.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Vibing</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/vibing/" class="navbar-brand">Damien Bowden</a>
+            <button class="navbar-toggle" aria-label="Toggle navigation" id="nav-toggle">
+                ☰
+            </button>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/vibing/" class="nav-link active">Home</a></li>
+                <li><a href="/vibing/about.html" class="nav-link">About</a></li>
+                <li><a href="/vibing/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="/vibing/news.html" class="nav-link">News</a></li>
+                <li><a href="/vibing/impressum.html" class="nav-link">Impressum</a></li>
+            </ul>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="bg-light p-5 rounded">
-                    <h1 class="display-4">Welcome to Vibing! 🎵</h1>
-                    <p class="lead">This is a simple web application built with HTML, vanilla JavaScript, and Bootstrap 5.</p>
-                    <hr class="my-4">
-                    <p>Automatically deployed to GitHub Pages from the public folder.</p>
-                    <a class="btn btn-primary btn-lg" href="https://github.com/damienbod/vibing" role="button">View on GitHub</a>
+    <main id="main-content">
+        <!-- Hero Carousel -->
+        <section class="section">
+            <div class="container">
+                <div class="carousel" role="region" aria-label="Featured content carousel" tabindex="0">
+                    <div class="carousel-inner">
+                        <div class="carousel-track">
+                            <div class="carousel-item" role="group" aria-label="Slide 1 of 3">
+                                <img src="/vibing/images/placeholders/carousel-1.svg" alt="Software Development">
+                                <div class="carousel-caption">
+                                    <h3>Software Development</h3>
+                                    <p>Building secure and scalable applications with modern technologies</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" role="group" aria-label="Slide 2 of 3">
+                                <img src="/vibing/images/placeholders/carousel-2.svg" alt="Security and Identity">
+                                <div class="carousel-caption">
+                                    <h3>Security & Identity</h3>
+                                    <p>Microsoft MVP - Expert in ASP.NET Core and identity solutions</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" role="group" aria-label="Slide 3 of 3">
+                                <img src="/vibing/images/placeholders/carousel-3.svg" alt="Open Source">
+                                <div class="carousel-caption">
+                                    <h3>Open Source Contributor</h3>
+                                    <p>Leading SSI and certificate management projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-control carousel-control-prev" aria-label="Previous slide">
+                            ‹
+                        </button>
+                        <button class="carousel-control carousel-control-next" aria-label="Next slide">
+                            ›
+                        </button>
+                    </div>
+                    
+                    <div class="carousel-indicators" role="tablist">
+                        <button class="carousel-indicator active" aria-label="Go to slide 1" role="tab"></button>
+                        <button class="carousel-indicator" aria-label="Go to slide 2" role="tab"></button>
+                        <button class="carousel-indicator" aria-label="Go to slide 3" role="tab"></button>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Welcome</h2>
+                <div class="grid grid-cols-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>About Me</h3>
+                            <p>I'm a software developer and Microsoft MVP specializing in ASP.NET Core, security, and identity management. I'm passionate about building secure, scalable applications and contributing to the open-source community.</p>
+                            <p>My work focuses on certificate management, Self-Sovereign Identity (SSI), and modern authentication protocols. I share my knowledge through technical blogging and active participation in developer communities.</p>
+                            <div class="mt-3">
+                                <a href="/vibing/about.html" class="btn btn-primary">Learn More About Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Explore</h2>
+                <div class="grid grid-cols-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Projects</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Explore my open-source projects including certificate management, SSI solutions, and ASP.NET Core examples.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/vibing/projects.html" class="btn btn-outline">View Projects</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Latest News</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Stay updated with the latest releases, articles, and updates from my projects and blog.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/vibing/news.html" class="btn btn-outline">Read News</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Connect</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Follow me on social media and connect with me on various developer platforms.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/vibing/about.html#social" class="btn btn-outline">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="https://damienbod.com" class="footer-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    <li><a href="https://github.com/damienbod" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://mvp.microsoft.com/en-us/PublicProfile/5002218" class="footer-link" target="_blank" rel="noopener noreferrer">MVP Profile</a></li>
+                    <li><a href="/vibing/impressum.html" class="footer-link">Impressum</a></li>
+                </ul>
+                <p>&copy; <span id="current-year">2024</span> Damien Bowden. All rights reserved.</p>
             </div>
         </div>
+    </footer>
 
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap 5</h5>
-                        <p class="card-text">Modern, responsive design with the latest Bootstrap framework.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Vanilla JavaScript</h5>
-                        <p class="card-text">Clean, simple JavaScript without any heavy frameworks.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">GitHub Pages</h5>
-                        <p class="card-text">Automatically deployed on every commit to the main branch.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Simple vanilla JavaScript example
-        console.log('Vibing is loaded! 🎵');
+    <script type="module" src="/vibing/js/carousel.js"></script>
+    <script type="module" src="/vibing/js/year.js"></script>
+    <script type="module">
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navbarNav = document.getElementById('navbar-nav');
+        
+        if (navToggle && navbarNav) {
+            navToggle.addEventListener('click', () => {
+                navbarNav.classList.toggle('active');
+            });
+        }
     </script>
 </body>
 </html>

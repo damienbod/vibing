@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "name": "AspNetCoreCertificates",
+      "description": "Certificate Manager for .NET - Create, manage, and use X509 certificates in ASP.NET Core applications. Supports development and production certificates with Let's Encrypt integration.",
+      "url": "https://github.com/damienbod/AspNetCoreCertificates",
+      "stars": "500+",
+      "topics": ["aspnetcore", "certificates", "security", "letsencrypt", "x509"]
+    },
+    {
+      "name": "AngularWebpackVisualStudio",
+      "description": "Complete template for building Angular applications with Webpack in Visual Studio. Includes TypeScript, hot module replacement, and production optimization.",
+      "url": "https://github.com/damienbod/AngularWebpackVisualStudio",
+      "stars": "300+",
+      "topics": ["angular", "webpack", "typescript", "visual-studio"]
+    },
+    {
+      "name": "AspNetCoreLocalization",
+      "description": "Comprehensive examples and best practices for implementing localization and globalization in ASP.NET Core applications. Supports multiple languages and cultures.",
+      "url": "https://github.com/damienbod/AspNetCoreLocalization",
+      "stars": "250+",
+      "topics": ["aspnetcore", "localization", "globalization", "i18n"]
+    },
+    {
+      "name": "SSI Credential Issuer",
+      "description": "Self-Sovereign Identity (SSI) credential issuer implementation. Issue and manage verifiable credentials using W3C standards and decentralized identifiers (DIDs).",
+      "url": "https://github.com/swiss-ssi-group/CredentialIssuer",
+      "stars": "100+",
+      "topics": ["ssi", "verifiable-credentials", "did", "identity", "blockchain"]
+    },
+    {
+      "name": "SSI DID Resolver",
+      "description": "Decentralized Identifier (DID) resolver for Self-Sovereign Identity systems. Resolve DIDs to DID documents across multiple methods and networks.",
+      "url": "https://github.com/swiss-ssi-group/DIDResolver",
+      "stars": "80+",
+      "topics": ["did", "ssi", "resolver", "identity", "decentralized"]
+    },
+    {
+      "name": "AzureAD-OIDC-ASP.NET",
+      "description": "Production-ready examples of Azure Active Directory integration with ASP.NET Core using OpenID Connect. Includes authentication, authorization, and API protection.",
+      "url": "https://github.com/damienbod/AzureAD-OIDC-ASP.NET",
+      "stars": "150+",
+      "topics": ["azure-ad", "oidc", "aspnetcore", "authentication", "oauth2"]
+    }
+  ]
+}
