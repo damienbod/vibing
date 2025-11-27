@@ -20,9 +20,15 @@
     },
     {
       "title": "Microsoft MVP Award",
-      "date": "2024-07-01",
+      "date": "2025-07-01",
       "summary": "Recognized as Microsoft MVP for contributions to ASP.NET Core development and community engagement. Focus on security and identity solutions.",
       "link": "https://mvp.microsoft.com/en-us/PublicProfile/5002218"
+    },
+    {
+      "title": "Sonar Navigators Award",
+      "date": "2025-09-01",
+      "summary": "Sonar Navigators are passionate members of the Sonar community recognized for their expertise and contributions to helping others leverage Sonar tools for better and more secure code.",
+      "link": "https://community.sonarsource.com/pub/navigators"
     }
   ]
 }
