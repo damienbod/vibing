@@ -18,9 +18,13 @@ All HTML pages include the following security-related meta tags:
 
 ### Content Security Policy (CSP)
 
+The CSP policy includes SHA-256 hashes for all JavaScript files to ensure script integrity:
+
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-[hash]'; style-src 'self'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
 ```
+
+Each page includes hashes only for the scripts it uses. The hashes are generated using SHA-256 and added to the `script-src` directive.
 
 ### X-Content-Type-Options
 
@@ -57,7 +61,7 @@ Restricts browser features like geolocation, microphone, and camera access to pr
 ## CSP Policy Details
 
 - **default-src 'self'**: Only allow resources from the same origin by default
-- **script-src 'self'**: Only allow scripts from the same origin, blocks inline scripts and eval()
+- **script-src 'self' 'sha256-[hash]'**: Only allow scripts from the same origin or scripts matching the specified SHA-256 hashes, blocks inline scripts and eval()
 - **style-src 'self'**: Only allow styles from the same origin, blocks inline styles
 - **img-src 'self' data: https://avatars.githubusercontent.com**: Allow images from same origin, data URIs, and GitHub avatars
 - **font-src 'self'**: Only allow fonts from the same origin
@@ -65,6 +69,23 @@ Restricts browser features like geolocation, microphone, and camera access to pr
 - **object-src 'none'**: Disallow all plugins (Flash, Java, etc.)
 - **base-uri 'self'**: Prevent base tag injection attacks
 - **form-action 'self'**: Only allow form submissions to the same origin
+
+### JavaScript File Hashes
+
+Each JavaScript file has a SHA-256 hash included in the CSP header. This provides an additional layer of security by ensuring that only scripts with the exact expected content can execute:
+
+- **carousel.js**: `sha256-miLfQ8pMGIgQfIOc6HqvpXQYb8nc1hip6cn9tDmNUeE=`
+- **csp-test.js**: `sha256-FpyOk+CfqxfAsFfYEI3ruDYaqLItLcbFB1+rqhWTYjY=`
+- **data-loader.js**: `sha256-Wr82wZpvgZd76fe9SvRrd0TcGjsnPAovRHNS9/Yahq4=`
+- **nav-toggle.js**: `sha256-G6Fl8tlTz9JTbXXKl+6/erUjuj4Im/GpZTpG+DE5wBQ=`
+- **news-init.js**: `sha256-a2+7ROhLhCtq8TS6PdosIPpsb8JUTjYa7qDjmiQDnhw=`
+- **projects-init.js**: `sha256-BGbCF6SwkgKebwJM7UKa/rZMq5svt9czb9cYpsNy/p0=`
+- **year.js**: `sha256-zsfr1IwefeYWI/m653quQJ68QmDW9ax22UtCZdroag0=`
+
+**Note**: If any JavaScript file is modified, its hash must be regenerated and updated in all HTML files that reference it. To regenerate a hash:
+```bash
+openssl dgst -sha256 -binary filename.js | openssl base64
+```
 
 ## Security Features
 
