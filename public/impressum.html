@@ -112,7 +112,14 @@
                             <p>This website contains links to external websites. When you click on these links, you will be leaving this site. We are not responsible for the privacy practices or content of these external sites.</p>
 
                             <h3 class="mt-3">Security</h3>
-                            <p>This website implements security best practices including Content Security Policy (CSP) headers, external script modules, and secure coding practices to protect against common web vulnerabilities.</p>
+                            <p>This website implements comprehensive security best practices including:</p>
+                            <ul>
+                                <li><strong>Strict Content Security Policy (CSP):</strong> Blocks inline scripts, inline event handlers, and eval() to prevent XSS attacks</li>
+                                <li><strong>External script modules:</strong> All JavaScript is loaded from external files using ES6 modules</li>
+                                <li><strong>No unsafe-inline or unsafe-eval:</strong> CSP prevents execution of any inline code</li>
+                                <li><strong>Additional CSP directives:</strong> object-src, base-uri, and form-action controls for enhanced security</li>
+                                <li><strong>Secure coding practices:</strong> Input validation, output encoding, and XSS prevention throughout</li>
+                            </ul>
                         </div>
                     </div>
 
