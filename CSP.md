@@ -1,24 +1,60 @@
-# Content Security Policy (CSP) Implementation
+# Security Headers Implementation
 
-This document describes the Content Security Policy implementation for the vibing website.
+This document describes the security headers implementation for the vibing website.
 
 ## Overview
 
-The website implements a strict Content Security Policy to protect against common web vulnerabilities including:
+The website implements multiple security headers to protect against common web vulnerabilities including:
 - Cross-Site Scripting (XSS)
 - Code injection attacks
 - Clickjacking
 - Data injection attacks
+- MIME type confusion attacks
+- Information leakage
 
-## CSP Policy
+## Security Headers
 
-All HTML pages include the following CSP meta tag:
+All HTML pages include the following security-related meta tags:
+
+### Content Security Policy (CSP)
 
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
 ```
 
-### Directives Explained
+### X-Content-Type-Options
+
+```html
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+```
+
+Prevents browsers from MIME-sniffing a response away from the declared content-type, protecting against MIME confusion attacks.
+
+### X-Frame-Options
+
+```html
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+```
+
+Prevents the page from being embedded in frames/iframes from other origins, protecting against clickjacking attacks.
+
+### Referrer-Policy
+
+```html
+<meta name="referrer" content="strict-origin-when-cross-origin">
+```
+
+Controls how much referrer information is sent with requests. This policy sends the origin when making cross-origin requests but full URL for same-origin requests.
+
+### Permissions-Policy
+
+```html
+<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+```
+
+Restricts browser features like geolocation, microphone, and camera access to prevent unauthorized use.
+
+## CSP Policy Details
 
 - **default-src 'self'**: Only allow resources from the same origin by default
 - **script-src 'self'**: Only allow scripts from the same origin, blocks inline scripts and eval()
