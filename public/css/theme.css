@@ -400,6 +400,19 @@
   border-radius: 2px;
 }
 
+/* Team Member Styles */
+.team-member-container {
+  text-align: center;
+}
+
+.team-member-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto var(--spacing-md);
+  display: block;
+}
+
 /* Responsive Utilities */
 @media (max-width: 767px) {
   .hide-mobile {
