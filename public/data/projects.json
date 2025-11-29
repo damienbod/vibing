@@ -15,6 +15,13 @@
       "topics": ["angular", "oidc", "oauth2", "authentication", "pkce"]
     },
     {
+      "name": "AspNetCoreOpeniddict",
+      "description": "OpenID Connect and OAuth 2.0 server implementation using OpenIddict in ASP.NET Core. Demonstrates authentication, authorization, and token management with production-ready examples.",
+      "url": "https://github.com/damienbod/AspNetCoreOpeniddict",
+      "stars": "100+",
+      "topics": ["aspnetcore", "openiddict", "oidc", "oauth2", "authentication", "authorization"]
+    },
+    {
       "name": "bff-aspnetcore-angular",
       "description": "Backend-For-Frontend (BFF) security architecture using ASP.NET Core and Angular. Implements secure authentication patterns with YARP reverse proxy and production-ready deployment.",
       "url": "https://github.com/damienbod/bff-aspnetcore-angular",
