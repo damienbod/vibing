@@ -76,6 +76,13 @@
       "url": "https://github.com/damienbod/McpOidcOAuth",
       "stars": "5+",
       "topics": ["mcp", "oidc", "oauth2", "authentication", "model-context-protocol"]
+    },
+    {
+      "name": "BlazorServerOidc",
+      "description": "OpenID Connect authentication for Blazor Server applications. Demonstrates secure authentication implementation with modern OIDC flows, session management, and best practices for server-side Blazor apps.",
+      "url": "https://github.com/damienbod/BlazorServerOidc",
+      "stars": "10+",
+      "topics": ["blazor", "blazor-server", "oidc", "authentication", "aspnetcore"]
     }
   ]
 }
