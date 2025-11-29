@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <title>CSP Test - Inline Script Blocking</title>
+    <link rel="stylesheet" href="css/csp-test.css">
+</head>
+<body>
+    <h1>CSP Security Test Results</h1>
+    
+    <div class="test-container">
+        <h2>Test 1: Inline Script (Should be BLOCKED ✓)</h2>
+        <p id="inline-test" class="test-result">Waiting for test...</p>
+        <script>
+            // This inline script should be blocked by CSP
+            document.getElementById('inline-test').textContent = '❌ FAIL: Inline script executed! CSP is not working correctly.';
+            document.getElementById('inline-test').className = 'test-result fail';
+        </script>
+    </div>
+    
+    <div class="test-container">
+        <h2>Test 2: Inline Event Handler (Should be BLOCKED ✓)</h2>
+        <button onclick="this.textContent='❌ FAIL: Inline handler executed!'" class="test-button">
+            Click to test (should not respond)
+        </button>
+        <p>If clicking changes the button text, CSP failed to block inline event handlers.</p>
+    </div>
+    
+    <div class="test-container">
+        <h2>Test 3: eval() Function (Should be BLOCKED ✓)</h2>
+        <p id="eval-test" class="test-result">Testing...</p>
+    </div>
+    
+    <div class="test-container">
+        <h2>Test 4: External Script (Should WORK ✓)</h2>
+        <p id="external-test" class="test-result">Waiting for external script...</p>
+    </div>
+
+    <div class="summary">
+        <h2>Summary</h2>
+        <p>A properly configured CSP should:</p>
+        <ul>
+            <li>✓ Block inline scripts (Test 1)</li>
+            <li>✓ Block inline event handlers (Test 2)</li>
+            <li>✓ Block eval() and similar dynamic code execution (Test 3)</li>
+            <li>✓ Allow external scripts from same origin (Test 4)</li>
+        </ul>
+        <p><strong>Check the browser console for CSP violation reports.</strong></p>
+    </div>
+    
+    <script type="module" src="js/csp-test.js"></script>
+</body>
+</html>
