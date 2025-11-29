@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (inlineTest) {
         if (inlineTest.textContent.includes('Waiting for test')) {
             inlineTest.textContent = '✓ PASS: Inline script was blocked by CSP';
-            inlineTest.style.background = '#d4edda';
+            inlineTest.className = 'test-result pass';
         }
     }
     
@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             eval('console.log("eval executed")');
             evalTest.textContent = '❌ FAIL: eval() was not blocked by CSP';
-            evalTest.style.background = '#f8d7da';
+            evalTest.className = 'test-result fail';
         } catch (e) {
             evalTest.textContent = '✓ PASS: eval() blocked by CSP - Error: ' + e.name;
-            evalTest.style.background = '#d4edda';
+            evalTest.className = 'test-result pass';
             console.log('eval blocked correctly:', e);
         }
     }
@@ -29,8 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const externalTest = document.getElementById('external-test');
     if (externalTest) {
         externalTest.textContent = '✓ PASS: External script executed successfully';
-        externalTest.style.background = '#d4edda';
+        externalTest.className = 'test-result pass';
     }
     
     console.log('All CSP tests completed. Check results above.');
 });
+

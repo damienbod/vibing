@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
     <title>CSP Test - Inline Script Blocking</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/csp-test.css">
 </head>
-<body style="font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto;">
+<body>
     <h1>CSP Security Test Results</h1>
     
-    <div style="border: 2px solid #333; padding: 15px; margin: 20px 0;">
+    <div class="test-container">
         <h2>Test 1: Inline Script (Should be BLOCKED ✓)</h2>
-        <p id="inline-test" style="padding: 10px; background: #fff3cd;">Waiting for test...</p>
+        <p id="inline-test" class="test-result">Waiting for test...</p>
         <script>
             // This inline script should be blocked by CSP
             document.getElementById('inline-test').textContent = '❌ FAIL: Inline script executed! CSP is not working correctly.';
-            document.getElementById('inline-test').style.background = '#f8d7da';
+            document.getElementById('inline-test').className = 'test-result fail';
         </script>
     </div>
     
-    <div style="border: 2px solid #333; padding: 15px; margin: 20px 0;">
+    <div class="test-container">
         <h2>Test 2: Inline Event Handler (Should be BLOCKED ✓)</h2>
-        <button onclick="this.textContent='❌ FAIL: Inline handler executed!'" style="padding: 10px; font-size: 16px;">
+        <button onclick="this.textContent='❌ FAIL: Inline handler executed!'" class="test-button">
             Click to test (should not respond)
         </button>
         <p>If clicking changes the button text, CSP failed to block inline event handlers.</p>
     </div>
     
-    <div style="border: 2px solid #333; padding: 15px; margin: 20px 0;">
+    <div class="test-container">
         <h2>Test 3: eval() Function (Should be BLOCKED ✓)</h2>
-        <p id="eval-test" style="padding: 10px; background: #fff3cd;">Testing...</p>
+        <p id="eval-test" class="test-result">Testing...</p>
     </div>
     
-    <div style="border: 2px solid #333; padding: 15px; margin: 20px 0;">
+    <div class="test-container">
         <h2>Test 4: External Script (Should WORK ✓)</h2>
-        <p id="external-test" style="padding: 10px; background: #fff3cd;">Waiting for external script...</p>
+        <p id="external-test" class="test-result">Waiting for external script...</p>
     </div>
 
-    <div style="border: 2px solid #333; padding: 15px; margin: 20px 0; background: #e7f3ff;">
+    <div class="summary">
         <h2>Summary</h2>
         <p>A properly configured CSP should:</p>
         <ul>
