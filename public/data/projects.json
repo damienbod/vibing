@@ -23,7 +23,7 @@
     },
     {
       "name": "AspNetCoreHybridFlowWithApi",
-      "description": "Different ASP.NET Core applications using OpenID Connect Hybrid flow Code Flow, Code Flow with PKCE, JWT APIs, MFA examples",
+      "description": "Different ASP.NET Core applications using OpenID Connect Hybrid flow, Code Flow, Code Flow with PKCE, JWT APIs, MFA examples",
       "url": "https://github.com/damienbod/AspNetCoreHybridFlowWithApi",
       "stars": "375+",
       "topics": ["aspnetcore", "hybrid-flow", "oidc", "oauth2", "pkce", "jwt", "mfa", "security"]
