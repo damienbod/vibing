@@ -22,6 +22,13 @@
       "topics": ["aspnetcore", "openiddict", "oidc", "oauth2", "authentication", "authorization"]
     },
     {
+      "name": "AspNetCoreHybridFlowWithApi",
+      "description": "Different ASP.NET Core applications using OpenID Connect Hybrid flow, Code Flow, Code Flow with PKCE, JWT APIs, MFA examples",
+      "url": "https://github.com/damienbod/AspNetCoreHybridFlowWithApi",
+      "stars": "375+",
+      "topics": ["aspnetcore", "hybrid-flow", "oidc", "oauth2", "pkce", "jwt", "mfa", "security"]
+    },
+    {
       "name": "bff-aspnetcore-angular",
       "description": "Backend-For-Frontend (BFF) security architecture using ASP.NET Core and Angular. Implements secure authentication patterns with YARP reverse proxy and production-ready deployment.",
       "url": "https://github.com/damienbod/bff-aspnetcore-angular",
