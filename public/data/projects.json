@@ -4,91 +4,91 @@
       "name": "AspNetCoreCertificates",
       "description": "Certificate Manager for .NET - Create, manage, and use X509 certificates in ASP.NET Core applications. Supports development and production certificates with Let's Encrypt integration.",
       "url": "https://github.com/damienbod/AspNetCoreCertificates",
-      "stars": "500+",
+      "stars": "250",
       "topics": ["aspnetcore", "certificates", "security", "letsencrypt", "x509"]
     },
     {
       "name": "angular-auth-oidc-client",
       "description": "Angular library for OpenID Connect & OAuth2. Certified by OpenID Foundation, supports PKCE, token refresh, all modern OIDC providers, and follows latest security standards.",
       "url": "https://github.com/damienbod/angular-auth-oidc-client",
-      "stars": "1100+",
+      "stars": "1215",
       "topics": ["angular", "oidc", "oauth2", "authentication", "pkce"]
     },
     {
       "name": "AspNetCoreOpeniddict",
       "description": "OpenID Connect and OAuth 2.0 server implementation using OpenIddict in ASP.NET Core. Demonstrates authentication, authorization, and token management with production-ready examples.",
       "url": "https://github.com/damienbod/AspNetCoreOpeniddict",
-      "stars": "100+",
+      "stars": "382",
       "topics": ["aspnetcore", "openiddict", "oidc", "oauth2", "authentication", "authorization"]
     },
     {
       "name": "AspNetCoreHybridFlowWithApi",
       "description": "Different ASP.NET Core applications using OpenID Connect Hybrid flow, Code Flow, Code Flow with PKCE, JWT APIs, MFA examples",
       "url": "https://github.com/damienbod/AspNetCoreHybridFlowWithApi",
-      "stars": "375+",
+      "stars": "375",
       "topics": ["aspnetcore", "hybrid-flow", "oidc", "oauth2", "pkce", "jwt", "mfa", "security"]
     },
     {
       "name": "bff-aspnetcore-angular",
       "description": "Backend-For-Frontend (BFF) security architecture using ASP.NET Core and Angular. Implements secure authentication patterns with YARP reverse proxy and production-ready deployment.",
       "url": "https://github.com/damienbod/bff-aspnetcore-angular",
-      "stars": "200+",
+      "stars": "136",
       "topics": ["bff", "aspnetcore", "angular", "security", "yarp"]
     },
     {
       "name": "swiyu-aspire-aspnetcore",
       "description": "Issue and verify swiyu credentials using the Swiss Digital Identity public beta, ASP.NET Core and Microsoft Aspire. Implements OID4VC and OID4VP standards with production-ready containers.",
       "url": "https://github.com/swiss-ssi-group/swiyu-aspire-aspnetcore",
-      "stars": "20+",
+      "stars": "6",
       "topics": ["swiyu", "aspire", "aspnetcore", "verifiable-credentials", "swiss-eid"]
     },
     {
       "name": "swiyu-idp-aspire-aspnetcore",
       "description": "Use swiyu (Swiss E-ID) with Duende IdentityServer using Aspire and ASP.NET Core. Implements authentication, MFA, and password recovery flows with verifiable credentials.",
       "url": "https://github.com/swiss-ssi-group/swiyu-idp-aspire-aspnetcore",
-      "stars": "15+",
+      "stars": "3",
       "topics": ["swiyu", "duende", "aspire", "swiss-eid", "identity-provider"]
     },
     {
       "name": "EntraVerifiedEmployee",
       "description": "Issue Microsoft Entra Verified Employee credentials using ASP.NET Core. Integrates with Microsoft Graph API to create verifiable credentials with employee information and photos.",
       "url": "https://github.com/swiss-ssi-group/EntraVerifiedEmployee",
-      "stars": "10+",
+      "stars": "12",
       "topics": ["entra-id", "verifiable-credentials", "aspnetcore", "microsoft-graph"]
     },
     {
       "name": "EndToEndSecurityWeb",
       "description": "End-to-end security implementation for web applications using ASP.NET Core. Demonstrates security best practices, secure coding patterns, and production-ready security configurations.",
       "url": "https://github.com/secure-web-apps/EndToEndSecurityWeb",
-      "stars": "5+",
+      "stars": "10",
       "topics": ["aspnetcore", "security", "web-security", "best-practices", "secure-coding"]
     },
     {
       "name": "AspNetCoreServiceBus",
       "description": "Azure Service Bus integration examples for ASP.NET Core. Demonstrates message queuing, pub/sub patterns, and reliable messaging in distributed applications.",
       "url": "https://github.com/damienbod/AspNetCoreServiceBus",
-      "stars": "10+",
+      "stars": "104",
       "topics": ["aspnetcore", "azure-service-bus", "messaging", "distributed-systems", "azure"]
     },
     {
       "name": "AzureDurableFunctions",
       "description": "Azure Durable Functions examples and patterns. Implements stateful workflows, orchestration patterns, and long-running processes in serverless applications.",
       "url": "https://github.com/damienbod/AzureDurableFunctions",
-      "stars": "10+",
+      "stars": "17",
       "topics": ["azure-functions", "durable-functions", "serverless", "orchestration", "workflows"]
     },
     {
       "name": "McpSecurity",
       "description": "Security implementations for Model Context Protocol (MCP). Demonstrates authentication, authorization, and secure communication patterns for MCP servers and clients.",
       "url": "https://github.com/damienbod/McpSecurity",
-      "stars": "5+",
+      "stars": "14",
       "topics": ["mcp", "security", "authentication", "model-context-protocol"]
     },
     {
       "name": "McpOidcOAuth",
       "description": "OpenID Connect and OAuth2 integration for Model Context Protocol (MCP). Implements secure authentication flows for MCP applications with modern identity standards.",
       "url": "https://github.com/damienbod/McpOidcOAuth",
-      "stars": "5+",
+      "stars": "4",
       "topics": ["mcp", "oidc", "oauth2", "authentication", "model-context-protocol"]
     }
   ]
