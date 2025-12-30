@@ -3,7 +3,7 @@
     {
       "title": "Swiyu Aspire ASP.NET Core Updated to .NET 10",
       "date": "2025-12-30",
-      "summary": "The swiyu-aspire-aspnetcore project has been updated to .NET 10 with enhanced Swiyu container support. This update brings improved performance and compatibility for Swiss Digital Identity credential issuance and verification using Microsoft Aspire.",
+      "summary": "Swiyu Aspire ASP.NET Core updated to .NET 10 with enhanced Swiyu container support. Implements Swiss Digital Identity credential issuance and verification using OID4VC and OID4VP standards with Microsoft Aspire.",
       "link": "https://github.com/swiss-ssi-group/swiyu-aspire-aspnetcore"
     },
     {
