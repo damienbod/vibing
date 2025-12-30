@@ -4,28 +4,29 @@
       "name": "AspNetCoreCertificates",
       "description": "Certificate Manager for .NET - Create, manage, and use X509 certificates in ASP.NET Core applications. Supports development and production certificates with Let's Encrypt integration.",
       "url": "https://github.com/damienbod/AspNetCoreCertificates",
-      "stars": "250",
+      "stars": "249",
       "topics": ["aspnetcore", "certificates", "security", "letsencrypt", "x509"]
     },
     {
       "name": "angular-auth-oidc-client",
       "description": "Angular library for OpenID Connect & OAuth2. Certified by OpenID Foundation, supports PKCE, token refresh, all modern OIDC providers, and follows latest security standards.",
       "url": "https://github.com/damienbod/angular-auth-oidc-client",
-      "stars": "1215",
+      "stars": "1217",
+      "npmPackage": "angular-auth-oidc-client",
       "topics": ["angular", "oidc", "oauth2", "authentication", "pkce"]
     },
     {
       "name": "AspNetCoreOpeniddict",
       "description": "OpenID Connect and OAuth 2.0 server implementation using OpenIddict in ASP.NET Core. Demonstrates authentication, authorization, and token management with production-ready examples.",
       "url": "https://github.com/damienbod/AspNetCoreOpeniddict",
-      "stars": "382",
+      "stars": "383",
       "topics": ["aspnetcore", "openiddict", "oidc", "oauth2", "authentication", "authorization"]
     },
     {
       "name": "AspNetCoreHybridFlowWithApi",
       "description": "Different ASP.NET Core applications using OpenID Connect Hybrid flow, Code Flow, Code Flow with PKCE, JWT APIs, MFA examples",
       "url": "https://github.com/damienbod/AspNetCoreHybridFlowWithApi",
-      "stars": "375",
+      "stars": "376",
       "topics": ["aspnetcore", "hybrid-flow", "oidc", "oauth2", "pkce", "jwt", "mfa", "security"]
     },
     {
@@ -60,7 +61,7 @@
       "name": "EndToEndSecurityWeb",
       "description": "End-to-end security implementation for web applications using ASP.NET Core. Demonstrates security best practices, secure coding patterns, and production-ready security configurations.",
       "url": "https://github.com/secure-web-apps/EndToEndSecurityWeb",
-      "stars": "10",
+      "stars": "13",
       "topics": ["aspnetcore", "security", "web-security", "best-practices", "secure-coding"]
     },
     {
@@ -74,14 +75,14 @@
       "name": "AzureDurableFunctions",
       "description": "Azure Durable Functions examples and patterns. Implements stateful workflows, orchestration patterns, and long-running processes in serverless applications.",
       "url": "https://github.com/damienbod/AzureDurableFunctions",
-      "stars": "17",
+      "stars": "16",
       "topics": ["azure-functions", "durable-functions", "serverless", "orchestration", "workflows"]
     },
     {
       "name": "McpSecurity",
       "description": "Security implementations for Model Context Protocol (MCP). Demonstrates authentication, authorization, and secure communication patterns for MCP servers and clients.",
       "url": "https://github.com/damienbod/McpSecurity",
-      "stars": "14",
+      "stars": "15",
       "topics": ["mcp", "security", "authentication", "model-context-protocol"]
     },
     {

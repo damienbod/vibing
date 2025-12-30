@@ -1,0 +1,16 @@
+{
+  "name": "vibing",
+  "version": "1.0.0",
+  "description": "A simple web application built with HTML, vanilla JavaScript, and Bootstrap 5",
+  "type": "module",
+  "scripts": {
+    "update-data": "node scripts/update-projects-data.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damienbod/vibing.git"
+  },
+  "author": "Damien Bowden",
+  "license": "MIT",
+  "devDependencies": {}
+}
