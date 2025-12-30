@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "title": "Swiyu Aspire ASP.NET Core Updated to .NET 10",
+      "date": "2025-12-30",
+      "summary": "The swiyu-aspire-aspnetcore project has been updated to .NET 10 with enhanced Swiyu container support. This update brings improved performance and compatibility for Swiss Digital Identity credential issuance and verification using Microsoft Aspire.",
+      "link": "https://github.com/swiss-ssi-group/swiyu-aspire-aspnetcore"
+    },
+    {
       "title": "BFF ASP.NET Core Angular Version 2.0.1 Released",
       "date": "2025-12-07",
       "summary": "BFF ASP.NET Core Angular 2.0.1 has been released with updates to .NET 10 and Angular 21. This release maintains the secure Backend-For-Frontend architecture pattern with the latest technology stack.",
