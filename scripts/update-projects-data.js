@@ -6,7 +6,7 @@
  * This script fetches the latest GitHub star counts for all projects listed in
  * public/data/projects.json and updates the file with accurate data.
  * 
- * For the angular-auth-oidc-client project, it also fetches the total npm downloads.
+ * For projects with npmPackage field, it also fetches the total npm downloads.
  * 
  * Usage: node scripts/update-projects-data.js
  */
@@ -15,6 +15,8 @@ import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 
 const PROJECTS_FILE = join(process.cwd(), 'public/data/projects.json');
+const API_DELAY_MS = 1000; // Delay between API calls to avoid rate limiting
+const NPM_STATS_START_DATE = '2015-01-01'; // npm download stats became available around 2015
 
 /**
  * Fetch GitHub repository stars count
@@ -84,7 +86,7 @@ async function fetchNpmDownloads(packageName) {
     }
 
     const packageInfo = await registryResponse.json();
-    const createdDate = packageInfo.time?.created || '2017-01-01';
+    const createdDate = packageInfo.time?.created || NPM_STATS_START_DATE;
     
     // Get downloads from creation date to now
     const endDate = new Date();
@@ -136,7 +138,7 @@ async function updateProjectsData() {
       if (project.url) {
         const stars = await fetchGitHubStars(project.url);
         if (stars !== null) {
-          project.stars = stars.toString();
+          project.stars = stars;
         }
         
         // For projects with npm packages, also fetch npm downloads
@@ -148,7 +150,7 @@ async function updateProjectsData() {
         }
         
         // Add a small delay to avoid rate limiting
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, API_DELAY_MS));
       }
     }
 
