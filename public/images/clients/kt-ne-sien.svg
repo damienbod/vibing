@@ -1,5 +1,7 @@
 <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
   <rect width="120" height="120" fill="#4f46e5" rx="8"/>
-  <text x="60" y="55" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Kt. NE</text>
-  <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">SIEN</text>
+  <text x="60" y="45" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">SIEN</text>
+  <text x="60" y="60" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">Service Informatique</text>
+  <text x="60" y="72" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">de l'État</text>
+  <text x="60" y="84" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">de Neuchâtel</text>
 </svg>
