@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-zsfr1IwefeYWI/m653quQJ68QmDW9ax22UtCZdroag0=' 'sha256-G6Fl8tlTz9JTbXXKl+6/erUjuj4Im/GpZTpG+DE5wBQ='; style-src 'self'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <title>Standards - Damien Bowden</title>
+    <meta name="description" content="OAuth, OpenID Connect und Identity-Standards-Dokumentation - Umfassende Referenz für Application Security und Identity-Standards.">
+    <meta name="author" content="Damien Bowden">
+    <meta name="keywords" content="OAuth, OpenID Connect, OIDC, FAPI, DPoP, JWT, Verifiable Credentials, SSI, Self-Sovereign Identity, Sicherheitsstandards">
+    <meta name="theme-color" content="#45e783">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://damienbod.github.io/vibing/de/standards.html">
+    <link rel="alternate" hreflang="en" href="https://damienbod.github.io/vibing/standards.html">
+    <link rel="alternate" hreflang="de" href="https://damienbod.github.io/vibing/de/standards.html">
+    <link rel="alternate" hreflang="de-CH" href="https://damienbod.github.io/vibing/de/standards.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damienbod.github.io/vibing/de/standards.html">
+    <meta property="og:title" content="Standards - Damien Bowden">
+    <meta property="og:description" content="OAuth, OpenID Connect und Identity-Standards-Dokumentation - Umfassende Referenz für Application Security und Identity-Standards.">
+    <meta property="og:site_name" content="Damien Bowden">
+    <meta property="og:locale" content="de_CH">
+    <meta property="og:image" content="https://damienbod.github.io/vibing/images/og-image.jpg">
+    <meta property="og:image:alt" content="Damien Bowden Profil">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@damien_bod">
+    <meta name="twitter:creator" content="@damien_bod">
+    <meta name="twitter:url" content="https://damienbod.github.io/vibing/de/standards.html">
+    <meta name="twitter:title" content="Standards - Damien Bowden">
+    <meta name="twitter:description" content="OAuth, OpenID Connect und Identity-Standards-Dokumentation - Umfassende Referenz für Application Security und Identity-Standards.">
+    <meta name="twitter:image" content="https://damienbod.github.io/vibing/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="Damien Bowden Profil">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/vibing/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/vibing/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/vibing/images/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/vibing/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/vibing/site.webmanifest">
+    
+    <link rel="stylesheet" href="/vibing/css/base.css">
+    <link rel="stylesheet" href="/vibing/css/theme.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/vibing/de/" class="navbar-brand">Damien Bowden</a>
+            <button class="navbar-toggle" aria-label="Navigation umschalten" id="nav-toggle">
+                ☰
+            </button>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/vibing/de/" class="nav-link">Startseite</a></li>
+                <li><a href="/vibing/de/projects.html" class="nav-link">OSS Projekte</a></li>
+                <li><a href="/vibing/de/offering.html" class="nav-link">Angebote</a></li>
+                <li><a href="/vibing/de/clients.html" class="nav-link">Kunden</a></li>
+                <li><a href="/vibing/de/standards.html" class="nav-link active">Standards</a></li>
+                <li><a href="/vibing/de/about.html" class="nav-link">Über mich</a></li>
+                <li><a href="/vibing/de/news.html" class="nav-link">Neuigkeiten</a></li>
+                <li><a href="/vibing/de/impressum.html" class="nav-link">Impressum</a></li>
+                <li><a href="/vibing/standards.html" class="nav-link" style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1rem;">🇬🇧 EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Security & Identity Standards</h1>
+                <p class="hero-subtitle">OAuth, OpenID Connect und Identity-Standards-Referenz</p>
+            </div>
+        </section>
+
+        <!-- App Security Standards -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">App Security Standards</h2>
+                <div class="grid grid-cols-1">
+                <!-- OpenID Connect & OAuth Standards -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">OpenID Connect & OAuth Standards</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>OpenID Connect Core 1.0</strong><br>
+                                <a href="https://openid.net/specs/openid-connect-core-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-connect-core-1_0.html</a>
+                                <p>The core OpenID Connect specification defining authentication layer on top of OAuth 2.0.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Authorization Framework - RFC 6749</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc6749.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc6749.html</a>
+                                <p>The OAuth 2.0 authorization framework enabling third-party applications to obtain limited access to HTTP services.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.1 (draft)</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-14" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-14</a>
+                                <p>Consolidates OAuth 2.0 and its extensions into a single document with updated security best practices.</p>
+                            </li>
+                            <li>
+                                <strong>FAPI 1.0 - Financial-grade API - Part 1: Baseline</strong><br>
+                                <a href="https://openid.net/specs/openid-financial-api-part-1-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-financial-api-part-1-1_0.html</a>
+                                <p>Baseline security profile for financial-grade APIs.</p>
+                            </li>
+                            <li>
+                                <strong>FAPI 1.0 - Financial-grade API - Part 2: Advanced</strong><br>
+                                <a href="https://openid.net/specs/openid-financial-api-part-2-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-financial-api-part-2-1_0.html</a>
+                                <p>Advanced security profile for high-risk financial APIs.</p>
+                            </li>
+                            <li>
+                                <strong>FAPI 2.0 - Financial-grade API Security Profile 2.0</strong><br>
+                                <a href="https://openid.net/specs/fapi-security-profile-2_0-final.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/fapi-security-profile-2_0-final.html</a>
+                                <p>Next generation of Financial-grade API security profile with enhanced security features.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Demonstrating Proof of Possession (DPoP) - RFC 9449</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc9449.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc9449.html</a>
+                                <p>Application-level proof-of-possession mechanism for OAuth 2.0 access tokens.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 for Browser-Based Apps (draft)</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps</a>
+                                <p>Best current practices for implementing OAuth 2.0 authorization flows in browser-based applications.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Device Authorization Grant - RFC 8628</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc8628.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc8628.html</a>
+                                <p>OAuth 2.0 extension for devices that lack a browser or have limited input capability.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth Cross-Device Security (draft)</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/draft-ietf-oauth-cross-device-security/" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/draft-ietf-oauth-cross-device-security/</a>
+                                <p>Security best practices for OAuth 2.0 cross-device flows to protect against various attacks.</p>
+                            </li>
+                            <li>
+                                <strong>Client-Initiated Backchannel Authentication (CIBA)</strong><br>
+                                <a href="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html</a>
+                                <p>Decoupled authentication flow allowing authentication initiation from one device and confirmation from another.</p>
+                            </li>
+                            <li>
+                                <strong>Proof Key for Code Exchange (PKCE) - RFC 7636</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7636.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7636.html</a>
+                                <p>Security extension to the OAuth 2.0 Authorization Code flow to prevent authorization code interception attacks.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Pushed Authorization Requests (PAR) - RFC 9126</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/html/rfc9126" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/html/rfc9126</a>
+                                <p>OAuth 2.0 extension that allows clients to push the authorization request payload directly to the authorization server before initiating the authorization flow, protecting against request tampering and improving security.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- JWT Standards -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">JWT Standards</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>JSON Web Token (JWT) - RFC 7519</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7519.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7519.html</a>
+                                <p>Compact, URL-safe means of representing claims to be transferred between two parties.</p>
+                            </li>
+                            <li>
+                                <strong>JSON Web Signature (JWS) - RFC 7515</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7515.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7515.html</a>
+                                <p>Represents content secured with digital signatures or Message Authentication Codes (MACs) using JSON.</p>
+                            </li>
+                            <li>
+                                <strong>JSON Web Encryption (JWE) - RFC 7516</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7516.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7516.html</a>
+                                <p>Represents encrypted content using JSON-based data structures.</p>
+                            </li>
+                            <li>
+                                <strong>JSON Web Key (JWK) - RFC 7517</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7517.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7517.html</a>
+                                <p>JSON data structure that represents a cryptographic key.</p>
+                            </li>
+                            <li>
+                                <strong>JSON Web Algorithms (JWA) - RFC 7518</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7518.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7518.html</a>
+                                <p>Cryptographic algorithms and identifiers for use with JWS, JWE, and JWK.</p>
+                            </li>
+                            <li>
+                                <strong>JSON Web Token Best Current Practices - RFC 8725</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc8725.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc8725.html</a>
+                                <p>Best practices for creating and validating JSON Web Tokens securely.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Additional RFCs -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Additional Security RFCs</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>RFC 8485 - Vectors of Trust</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc8485.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc8485.html</a>
+                                <p>Method for expressing trustworthiness of authentication events and identity assertions.</p>
+                            </li>
+                            <li>
+                                <strong>Authentication Method Reference Values - RFC 8176</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/html/rfc8176" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/html/rfc8176</a>
+                                <p>Authentication Method Reference (AMR) values for OAuth and OpenID Connect.</p>
+                            </li>
+                            <li>
+                                <strong>OpenID Connect EAP ACR Values 1.0</strong><br>
+                                <a href="https://openid.net/specs/openid-connect-eap-acr-values-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-connect-eap-acr-values-1_0.html</a>
+                                <p>Authentication Context Class Reference (ACR) values for OpenID Connect Extended Authentication Profile.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Token Exchange - RFC 8693</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc8693.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc8693.html</a>
+                                <p>Protocol for exchanging one security token for another to enable delegation and impersonation scenarios.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Token Revocation - RFC 7009</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7009.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7009.html</a>
+                                <p>Mechanism for clients to indicate to the authorization server that a token is no longer needed.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth 2.0 Token Introspection - RFC 7662</strong><br>
+                                <a href="https://www.rfc-editor.org/rfc/rfc7662.html" target="_blank" rel="noopener noreferrer">https://www.rfc-editor.org/rfc/rfc7662.html</a>
+                                <p>Method for a resource server to query an authorization server to determine token metadata.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Identity Standards -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Identity Standards</h2>
+                <div class="grid grid-cols-1">
+                <!-- Self-Sovereign Identity (SSI) Standards -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Self-Sovereign Identity (SSI) Standards</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>W3C Verifiable Credentials Data Model 2.0</strong><br>
+                                <a href="https://www.w3.org/TR/vc-data-model-2.0/" target="_blank" rel="noopener noreferrer">https://www.w3.org/TR/vc-data-model-2.0/</a>
+                                <p>Standard data model for expressing verifiable credentials and verifiable presentations on the web.</p>
+                            </li>
+                            <li>
+                                <strong>W3C Decentralized Identifiers (DIDs) 1.0</strong><br>
+                                <a href="https://www.w3.org/TR/did-core/" target="_blank" rel="noopener noreferrer">https://www.w3.org/TR/did-core/</a>
+                                <p>New type of identifier for verifiable, decentralized digital identity.</p>
+                            </li>
+                            <li>
+                                <strong>Trust DID Web (draft)</strong><br>
+                                <a href="https://identity.foundation/trustdidweb/" target="_blank" rel="noopener noreferrer">https://identity.foundation/trustdidweb/</a>
+                                <p>Enhanced DID method building on did:web with additional trust and security features.</p>
+                            </li>
+                            <li>
+                                <strong>OpenID for Verifiable Credential Issuance 1.0</strong><br>
+                                <a href="https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html</a>
+                                <p>Protocol for issuing verifiable credentials using OAuth 2.0 authorization framework.</p>
+                            </li>
+                            <li>
+                                <strong>OpenID for Verifiable Presentations 1.0</strong><br>
+                                <a href="https://openid.net/specs/openid-4-verifiable-presentations-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-4-verifiable-presentations-1_0.html</a>
+                                <p>Protocol for presenting verifiable credentials to relying parties using OpenID Connect.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth Selective Disclosure JWT (SD-JWT) (draft)</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/</a>
+                                <p>Mechanism enabling selective disclosure of individual claims from a JSON object.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth SD-JWT-based Verifiable Credentials (SD-JWT VC) (draft)</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/</a>
+                                <p>Data model for verifiable credentials based on SD-JWT with selective disclosure capabilities.</p>
+                            </li>
+                            <li>
+                                <strong>OAuth Status List (draft)</strong><br>
+                                <a href="https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/</a>
+                                <p>Privacy-preserving status information for credentials including revocation and suspension.</p>
+                            </li>
+                            <li>
+                                <strong>did:web Method Specification</strong><br>
+                                <a href="https://w3c-ccg.github.io/did-method-web/" target="_blank" rel="noopener noreferrer">https://w3c-ccg.github.io/did-method-web/</a>
+                                <p>DID method using existing web infrastructure with domain names and HTTP(S).</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Additional Identity Standards -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Additional Identity Standards</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>WebAuthn - Web Authentication API</strong><br>
+                                <a href="https://www.w3.org/TR/webauthn-3/" target="_blank" rel="noopener noreferrer">https://www.w3.org/TR/webauthn-3/</a>
+                                <p>API enabling strong authentication on the web using public key cryptography and hardware tokens.</p>
+                            </li>
+                            <li>
+                                <strong>FIDO2 Specifications</strong><br>
+                                <a href="https://fidoalliance.org/specifications/" target="_blank" rel="noopener noreferrer">https://fidoalliance.org/specifications/</a>
+                                <p>Standards for passwordless authentication including WebAuthn and CTAP protocols.</p>
+                            </li>
+                            <li>
+                                <strong>FIDO Alliance Passkeys</strong><br>
+                                <a href="https://fidoalliance.org/passkeys/" target="_blank" rel="noopener noreferrer">https://fidoalliance.org/passkeys/</a>
+                                <p>Passkeys are a passwordless authentication method, designed as a simpler and more secure alternative to passwords. They leverage public key cryptography and tie credential access to the user's device, reducing phishing risk. Supported by the FIDO Alliance and major platform providers.</p>
+                            </li>
+                            <li>
+                                <strong>OpenID Connect for Identity Assurance 1.0</strong><br>
+                                <a href="https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html" target="_blank" rel="noopener noreferrer">https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html</a>
+                                <p>Extension to OpenID Connect for communicating identity assurance levels and evidence.</p>
+                            </li>
+                            <li>
+                                <strong>SAML 2.0 - Security Assertion Markup Language</strong><br>
+                                <a href="https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html" target="_blank" rel="noopener noreferrer">https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html</a>
+                                <p>XML-based framework for exchanging authentication and authorization data between parties.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Additional Resources</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>For more information on implementing these standards, visit:</p>
+                        <ul>
+                            <li><a href="https://openid.net/" target="_blank" rel="noopener noreferrer">OpenID Foundation</a> - OpenID Connect and FAPI specifications</li>
+                            <li><a href="https://datatracker.ietf.org/" target="_blank" rel="noopener noreferrer">IETF Datatracker</a> - OAuth and JWT RFCs and drafts</li>
+                            <li><a href="https://www.w3.org/TR/" target="_blank" rel="noopener noreferrer">W3C Technical Reports</a> - Verifiable Credentials, DIDs, and WebAuthn</li>
+                            <li><a href="https://identity.foundation/" target="_blank" rel="noopener noreferrer">Decentralized Identity Foundation</a> - DID methods and SSI standards</li>
+                            <li><a href="https://github.com/OWASP/ASVS" target="_blank" rel="noopener noreferrer">OWASP ASVS</a> - Application Security Verification Standard</li>
+                            <li><a href="https://swiyu-admin-ch.github.io/introduction/" target="_blank" rel="noopener noreferrer">SwIYu Introduction</a> - Swiss Identity and Access Management</li>
+                            <li><a href="/vibing/projects.html">OSS Projects</a> - See implementations of these standards in practice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="https://damienbod.com" class="footer-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    <li><a href="https://github.com/damienbod" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://mvp.microsoft.com/en-us/PublicProfile/5002218" class="footer-link" target="_blank" rel="noopener noreferrer">MVP Profil</a></li>
+                    <li><a href="/vibing/de/impressum.html" class="footer-link">Impressum</a></li>
+                </ul>
+                <p>&copy; <span id="current-year">2024</span> Damien Bowden. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/vibing/js/year.js"></script>
+    <script type="module" src="/vibing/js/nav-toggle.js"></script>
+</body>
+</html>
