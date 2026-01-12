@@ -61,7 +61,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(99, 102, 241, 0.08);
+  background: var(--accent-bg-hover);
   border-radius: var(--border-radius);
   opacity: 0;
   transition: opacity 0.25s ease;
@@ -80,8 +80,8 @@
 .nav-link.active {
   color: var(--accent-color);
   font-weight: 600;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0.05) 100%);
-  box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.2);
+  background: linear-gradient(135deg, var(--accent-bg-active-start) 0%, var(--accent-bg-active-end) 100%);
+  box-shadow: inset 0 0 0 1px var(--accent-border-active);
 }
 
 .nav-link.active::before {
@@ -103,7 +103,7 @@
 
 .navbar-toggle:hover {
   border-color: var(--accent-color);
-  background: rgba(99, 102, 241, 0.05);
+  background: var(--accent-bg-hover);
   color: var(--accent-color);
 }
 
