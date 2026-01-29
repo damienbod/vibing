@@ -171,6 +171,19 @@
         "authentication",
         "model-context-protocol"
       ]
+    },
+    {
+      "name": "vibing",
+      "description": "A simple web application built with HTML, vanilla JavaScript, and Bootstrap 5, deployed automatically to GitHub Pages. Features a personal portfolio site with projects showcase, news, and standards pages.",
+      "url": "https://github.com/damienbod/vibing",
+      "stars": 0,
+      "topics": [
+        "html",
+        "javascript",
+        "bootstrap",
+        "github-pages",
+        "portfolio"
+      ]
     }
   ]
 }
