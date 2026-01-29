@@ -171,6 +171,19 @@
         "authentication",
         "model-context-protocol"
       ]
+    },
+    {
+      "name": "OAuthClientAssertionsPerInstance",
+      "description": "Experimental alternative flow for OAuth 2.0 First-Party Applications using client assertions and Duende IdentityServer. Demonstrates device-focused authentication without web browsers.",
+      "url": "https://github.com/damienbod/OAuthClientAssertionsPerInstance",
+      "stars": 0,
+      "topics": [
+        "oauth2",
+        "client-assertions",
+        "duende-identityserver",
+        "aspnetcore",
+        "authentication"
+      ]
     }
   ]
 }
