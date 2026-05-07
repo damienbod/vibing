@@ -1,6 +1,13 @@
 {
   "articles": [
     {
+      "title": "AspNetCoreCertificates Updated to .NET 10 – CertificateManager 1.0.10 Released",
+      "date": "2026-05-07",
+      "summary": "AspNetCoreCertificates has been updated to .NET 10 with an increased default certificate key size. The new CertificateManager 1.0.10 NuGet package is now available, making it easier to create and manage X.509 certificates for client-server authentication and IoT devices in ASP.NET Core applications.",
+      "link": "https://github.com/damienbod/AspNetCoreCertificates",
+      "nuget": "https://www.nuget.org/packages/CertificateManager/"
+    },
+    {
       "title": "Swiyu Aspire ASP.NET Core Updated to .NET 10",
       "date": "2025-12-30",
       "summary": "Swiyu Aspire ASP.NET Core updated to .NET 10 with enhanced Swiyu container support. Implements Swiss Digital Identity credential issuance and verification using OID4VC and OID4VP standards with Microsoft Aspire.",
