@@ -71,6 +71,22 @@
       ]
     },
     {
+      "name": "Auth0BffDpopApi",
+      "description": "Aspire and BFF implementation using Auth0 for client and server authentication with OAuth DPoP and PAR in Angular and ASP.NET Core applications.",
+      "url": "https://github.com/damienbod/Auth0BffDpopApi",
+      "stars": 2,
+      "topics": [
+        "auth0",
+        "bff",
+        "dpop",
+        "oauth2",
+        "openid-connect",
+        "par",
+        "aspnetcore",
+        "angular"
+      ]
+    },
+    {
       "name": "swiyu-aspire-aspnetcore",
       "description": "Issue and verify swiyu credentials using the Swiss Digital Identity public beta, ASP.NET Core and Microsoft Aspire. Implements OID4VC and OID4VP standards with production-ready containers.",
       "url": "https://github.com/swiss-ssi-group/swiyu-aspire-aspnetcore",

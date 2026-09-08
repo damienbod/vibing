@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "title": "New OSS Project: @damienbod/Auth0BffDpopApi",
+      "date": "2026-08-17",
+      "summary": "Auth0BffDpopApi demonstrates a BFF architecture built with Angular and ASP.NET Core using Auth0, OAuth DPoP, and PAR, with Aspire-based deployment support.",
+      "link": "https://github.com/damienbod/Auth0BffDpopApi"
+    },
+    {
       "title": "AspNetCoreCertificates Updated to .NET 10 – CertificateManager 1.0.10 Released",
       "date": "2026-05-07",
       "summary": "AspNetCoreCertificates has been updated to .NET 10 with an increased default certificate key size. The new CertificateManager 1.0.10 NuGet package is now available, making it easier to create and manage X.509 certificates for client-server authentication and IoT devices in ASP.NET Core applications.",
