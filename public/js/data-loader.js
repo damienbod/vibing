@@ -91,7 +91,7 @@ export async function loadProjects(containerId) {
       </div>
       <div class="card-body">
         <p>${escapeHtml(project.description)}</p>
-        ${project.stars ? `<p class="text-muted">⭐ ${escapeHtml(project.stars)} stars</p>` : ''}
+        ${project.stars !== undefined && project.stars !== null ? `<p class="text-muted">⭐ ${escapeHtml(project.stars)} stars</p>` : ''}
         ${project.topics ? `<div class="mt-2 mb-2">
           ${project.topics.map(topic => `<span class="badge">${escapeHtml(topic)}</span>`).join(' ')}
         </div>` : ''}

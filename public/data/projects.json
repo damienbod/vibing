@@ -4,7 +4,7 @@
       "name": "AspNetCoreCertificates",
       "description": "Certificate Manager for .NET - Create, manage, and use X509 certificates in ASP.NET Core applications. Supports development and production certificates with Let's Encrypt integration.",
       "url": "https://github.com/damienbod/AspNetCoreCertificates",
-      "stars": 249,
+      "stars": 263,
       "topics": [
         "aspnetcore",
         "certificates",
@@ -17,7 +17,7 @@
       "name": "angular-auth-oidc-client",
       "description": "Angular library for OpenID Connect & OAuth2. Certified by OpenID Foundation, supports PKCE, token refresh, all modern OIDC providers, and follows latest security standards.",
       "url": "https://github.com/damienbod/angular-auth-oidc-client",
-      "stars": 1217,
+      "stars": 1235,
       "npmPackage": "angular-auth-oidc-client",
       "topics": [
         "angular",
@@ -31,7 +31,7 @@
       "name": "AspNetCoreOpeniddict",
       "description": "OpenID Connect and OAuth 2.0 server implementation using OpenIddict in ASP.NET Core. Demonstrates authentication, authorization, and token management with production-ready examples.",
       "url": "https://github.com/damienbod/AspNetCoreOpeniddict",
-      "stars": 383,
+      "stars": 392,
       "topics": [
         "aspnetcore",
         "openiddict",
@@ -45,7 +45,7 @@
       "name": "AspNetCoreHybridFlowWithApi",
       "description": "Different ASP.NET Core applications using OpenID Connect Hybrid flow, Code Flow, Code Flow with PKCE, JWT APIs, MFA examples",
       "url": "https://github.com/damienbod/AspNetCoreHybridFlowWithApi",
-      "stars": 376,
+      "stars": 377,
       "topics": [
         "aspnetcore",
         "hybrid-flow",
@@ -61,7 +61,7 @@
       "name": "bff-aspnetcore-angular",
       "description": "Backend-For-Frontend (BFF) security architecture using ASP.NET Core and Angular. Implements secure authentication patterns with YARP reverse proxy and production-ready deployment.",
       "url": "https://github.com/damienbod/bff-aspnetcore-angular",
-      "stars": 136,
+      "stars": 150,
       "topics": [
         "bff",
         "aspnetcore",
@@ -90,7 +90,7 @@
       "name": "swiyu-aspire-aspnetcore",
       "description": "Issue and verify swiyu credentials using the Swiss Digital Identity public beta, ASP.NET Core and Microsoft Aspire. Implements OID4VC and OID4VP standards with production-ready containers.",
       "url": "https://github.com/swiss-ssi-group/swiyu-aspire-aspnetcore",
-      "stars": 6,
+      "stars": 7,
       "topics": [
         "swiyu",
         "aspire",
@@ -103,7 +103,7 @@
       "name": "swiyu-idp-aspire-aspnetcore",
       "description": "Use swiyu (Swiss E-ID) with Duende IdentityServer using Aspire and ASP.NET Core. Implements authentication, MFA, and password recovery flows with verifiable credentials.",
       "url": "https://github.com/swiss-ssi-group/swiyu-idp-aspire-aspnetcore",
-      "stars": 3,
+      "stars": 2,
       "topics": [
         "swiyu",
         "duende",
@@ -128,7 +128,7 @@
       "name": "EndToEndSecurityWeb",
       "description": "End-to-end security implementation for web applications using ASP.NET Core. Demonstrates security best practices, secure coding patterns, and production-ready security configurations.",
       "url": "https://github.com/secure-web-apps/EndToEndSecurityWeb",
-      "stars": 13,
+      "stars": 15,
       "topics": [
         "aspnetcore",
         "security",
@@ -154,7 +154,7 @@
       "name": "AzureDurableFunctions",
       "description": "Azure Durable Functions examples and patterns. Implements stateful workflows, orchestration patterns, and long-running processes in serverless applications.",
       "url": "https://github.com/damienbod/AzureDurableFunctions",
-      "stars": 16,
+      "stars": 15,
       "topics": [
         "azure-functions",
         "durable-functions",
@@ -167,7 +167,7 @@
       "name": "McpSecurity",
       "description": "Security implementations for Model Context Protocol (MCP). Demonstrates authentication, authorization, and secure communication patterns for MCP servers and clients.",
       "url": "https://github.com/damienbod/McpSecurity",
-      "stars": 15,
+      "stars": 21,
       "topics": [
         "mcp",
         "security",
@@ -179,7 +179,7 @@
       "name": "McpOidcOAuth",
       "description": "OpenID Connect and OAuth2 integration for Model Context Protocol (MCP). Implements secure authentication flows for MCP applications with modern identity standards.",
       "url": "https://github.com/damienbod/McpOidcOAuth",
-      "stars": 4,
+      "stars": 8,
       "topics": [
         "mcp",
         "oidc",
@@ -192,13 +192,26 @@
       "name": "OAuthClientAssertionsPerInstance",
       "description": "Experimental alternative flow for OAuth 2.0 First-Party Applications using client assertions and Duende IdentityServer. Demonstrates device-focused authentication without web browsers.",
       "url": "https://github.com/damienbod/OAuthClientAssertionsPerInstance",
-      "stars": 0,
+      "stars": 5,
       "topics": [
         "oauth2",
         "client-assertions",
         "duende-identityserver",
         "aspnetcore",
         "authentication"
+      ]
+    },
+    {
+      "name": "OidcOpenIdentityServer",
+      "description": "Open.IdentityServer using Aspire and ASP.NET Core.",
+      "url": "https://github.com/damienbod/OidcOpenIdentityServer",
+      "stars": 3,
+      "topics": [
+        "aspire",
+        "iam",
+        "identity",
+        "oidc",
+        "openid-connect"
       ]
     }
   ]
