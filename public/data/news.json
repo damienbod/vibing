@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "title": "New OSS Project: ApiJwtWithTwoSts",
+      "date": "2026-11-22",
+      "summary": "Web API authorization with multiple identity providers in ASP.NET Core.",
+      "link": "https://github.com/damienbod/ApiJwtWithTwoSts"
+    },
+    {
+      "title": "New OSS Project: AspNetCoreOpenIddict",
+      "date": "2026-11-22",
+      "summary": "OpenIddict with Angular and Blazor WebAssembly BFF clients using OpenID Connect authorization code flow with PKCE and ASP.NET Core APIs.",
+      "link": "https://github.com/damienbod/AspNetCoreOpenIddict"
+    },
+    {
+      "title": "New OSS Project: OidcOpenIdentityServer",
+      "date": "2026-11-22",
+      "summary": "Open.IdentityServer using Aspire and ASP.NET Core.",
+      "link": "https://github.com/damienbod/OidcOpenIdentityServer"
+    },
+    {
       "title": "New OSS Project: @damienbod/Auth0BffDpopApi",
       "date": "2026-08-17",
       "summary": "Auth0BffDpopApi demonstrates a BFF architecture built with Angular and ASP.NET Core using Auth0, OAuth DPoP, and PAR, with Aspire-based deployment support.",
